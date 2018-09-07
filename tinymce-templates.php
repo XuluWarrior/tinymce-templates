@@ -368,7 +368,7 @@ class TinyMCE_Templates
 				),
 				'search_items' => __( 'Search Templates', 'tinymce_templates' ),
 			),
-			'public' => false,
+			'public' => true,
 			'menu_icon' => 'dashicons-edit',
 			'publicly_queryable' => false,
 			'exclude_from_search' => true,
