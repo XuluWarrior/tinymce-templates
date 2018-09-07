@@ -238,10 +238,11 @@ class TinyMCE_Templates
 				'post_type' => 'tinymcetemplates',
 			);
 
-			$post = get_post( $p['id'] );
+			$postId = pll_get_post ? pll_get_post( $p['id'] ) : $p['id'];
+			$post = get_post( $postId );
 
 			if ( is_a( $post, 'WP_Post' ) ) {
-				if ( get_post_meta( $p['id'], 'insert_as_shortcode', true ) ) {
+				if ( get_post_meta( $postId, 'insert_as_shortcode', true ) ) {
 					$post_content = $post->post_content;
 				}
 			}
