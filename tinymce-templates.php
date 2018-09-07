@@ -370,7 +370,7 @@ class TinyMCE_Templates
 			),
 			'public' => true,
 			'menu_icon' => 'dashicons-edit',
-			'publicly_queryable' => false,
+			'publicly_queryable' => true,
 			'exclude_from_search' => true,
 			'show_ui' => true,
 			'capability_type' => 'post',
